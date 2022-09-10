@@ -52,6 +52,11 @@
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
     "install:peer-deps": "npm install --force",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "prettier": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+    "prettier:check": "prettier --check \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+    "preinstall": "npx npm-force-resolutions",
     "heroku-postbuild": "npm install --force && npm run build"
   },
   "eslintConfig": {
