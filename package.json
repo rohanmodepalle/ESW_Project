@@ -13,7 +13,7 @@
     "url": "git+https://github.com/creativetimofficial/argon-dashboard-material-ui.git"
   },
   "engines": {
-    "node": ">=8.0.0",
+    "node": "16.17.0",
     "npm": ">=6"
   },
   "dependencies": {
